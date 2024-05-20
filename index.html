@@ -1,45 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monster Battler Project</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
-<body style="margin: 0; padding: 0">
-<div class="d-flex flex-row align-items-center" style="height: 100vh;">
-  <!-- Left side content -->
-  <div class="h-100 w-100 d-flex flex-column align-items-center justify-content-around" id="Left" style="padding: 90px 30px; min-width: 900px; background-color: gainsboro;">
-    <h4>Welcome to my portfolio project showcasing my skills in backend development!</h4> Here, I present to you a simplified version of the beloved Pokémon Showdown. This project comprises three integral parts:
-    <ol class="d-flex flex-column justify-content-around h-50">
-      <li>
-        <b>Monster Battling System:</b> Implemented in Java, this handles all the intricate logic behind engaging battles between digital creatures. From move selection to HP management, experience the essence of Pokémon battles in this meticulously crafted system.
-        <br/><a class="btn btn-secondary w-25 m-2" id="Front-Link" href="https://github.com/WritingHusky/MonsterBattleFrontend" >View Front-end Code</a>
-      </li>
-      <li>
-        <b>Spring-Boot REST API:</b> Delve into the heart of the action with a robust API built on Spring Boot. This component orchestrates the interactions within battles, facilitating seamless communication between users and AI opponents.
-        <br/><a class="btn btn-secondary w-25 m-2" id="API-Link" href="https://github.com/WritingHusky/MainBattleBuilder">View API Code</a>
-      </li>
-      <li>
-        <b>React Frontend:</b> Although aesthetics take a backseat, the React frontend (in TypeScript) provides a functional interface for users to engage with the battle system. Experience the thrill of strategic gameplay through a simple yet effective user interface.
-        <br/><a class="btn btn-secondary w-25 m-2" id="Sys-Link" href="https://github.com/WritingHusky/MonsterBattleHandling">View Battle System Code</a>
-      </li>
-    </ol>
-    <div>
-      <h4>Experience the thrill firsthand!</h4> Click the button below to engage with the React frontend and immerse yourself in the captivating world of monster battles. Test your skills, strategize your moves, and embark on an adventure unlike any other. Let the games begin!
-      <br/><button class="btn btn-primary m-2" id="demo-Link">Go To Demo</button>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Monster Battler Project</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		/>
+	</head>
+	<body style="margin: 0; padding: 0; min-width: 800px;">
+		<!-- Main content -->
+		<div
+			class=" w-100 d-flex flex-column align-items-center justify-content-between"
+			id="Left"
+			style="padding: 50px 20px 0 30px;  background-color: gainsboro; height: 90vh;"
+		>
+    <h4>Welcome to my Monster Batttler Project!</h4>
+      <p>
+        This project is based on the popular website Pokémon Showdown, which
+        simulate pokemon battles for users to interact with. This project is
+        broken down into three integral parts:
+      </p>
+			<ol class="d-flex flex-column justify-content-around h-50 w-100">
+				<li>
+					<p>
+            <b>Monster Battling System:</b> Implemented in Java, this portion of
+            the project is where all the logic of the turn in a battle is handled.
+            The system is designed to simulate a turn in a battle given the
+            current state of the battle.
+          </p><a
+						class="btn btn-secondary w-25 m-2"
+						id="Front-Link"
+						href="https://github.com/WritingHusky/MonsterBattleFrontend"
+						>View Front-end Code</a
+					>
+				</li>
+				<li>
+					<p>
+            <b>Monster Battle API:</b> This spring-boot API serves as the backend
+            for the project, handling the creation of battles, the execution of
+            turns, simulating AI opponents, and more. The API is designed to be
+            robust, efficient, and scalable, ensuring a seamless experience for
+            users.
+          </p><a
+						class="btn btn-secondary w-25 m-2"
+						id="API-Link"
+						href="https://github.com/WritingHusky/MainBattleBuilder"
+						>View API Code</a
+					>
+				</li>
+				<li>
+					<p>
+            <b>React Frontend:</b> Although aesthetics take a backseat, the React
+            frontend (using TypeScript) provides a functional interface for users
+            to engage with the battle system.
+          </p><a
+						class="btn btn-secondary w-25 m-2"
+						id="Sys-Link"
+						href="https://github.com/WritingHusky/MonsterBattleHandling"
+						>View Battle System Code</a
+					>
+				</li>
+			</ol>
+			<div>
+				<h4>Experience the thrill firsthand!</h4>
+				<p>
+          Click the button below to engage with the React frontend and immerse
+          yourself in the captivating world of monster battles. Test your skills,
+          strategize your moves, and embark on an adventure unlike any other. Let
+          the games begin!
+        </p><button
+					class="btn btn-primary m-2"
+					id="demo-Link"
+				>
+					Go To Demo
+				</button>
+			</div>
+			<p>
+        Whether you're a fellow developer, an avid Pokémon fan, or simply curious
+        about backend development, explore this project to witness firsthand the
+        culmination of my skills and passion. Let the battles begin!
+      </p>
+		</div>
+
+    <!-- Footer -->
+    <div
+      class="w-100 d-flex flex-column justify-content-center align-items-center"
+      style="height: 10vh; background-color: rgb(71, 71, 71); color: white"
+    >
+      <p>Created by Ethan Gelians (WritingHusky)</p>
+      <p style="font-size: 0.8rem;">*This project is still in development so bug may occur*</p>
     </div>
-    Whether you're a fellow developer, an avid Pokémon fan, or simply curious about backend development, explore this project to witness firsthand the culmination of my skills and passion. Let the battles begin!
-  </div>
-  
-  <script>
-    document.getElementById("demo-Link").addEventListener("click", () => {
-      alert("This project is currently under development. Please check back later for the demo!");
-    });
-  </script>  
-  
-</div>
-</body>
+
+		<script>
+			document.getElementById("demo-Link").addEventListener("click", () => {
+				alert(
+					"This project is currently under development. Please check back later for the demo!"
+				);
+			});
+		</script>
+	</body>
 </html>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
