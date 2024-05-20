@@ -9,41 +9,35 @@
 <body style="margin: 0; padding: 0">
 <div class="d-flex flex-row align-items-center" style="height: 100vh;">
   <!-- Left side content -->
-  <div class="h-100 w-50 d-flex flex-column align-items-center justify-content-around" id="Left" style="padding: 90px 30px; min-width: 450px; background-color: gainsboro;">
-    Welcome to my portfolio project showcasing my skills in backend development! Here, I present to you a simplified version of the beloved Pokémon Showdown. This project comprises three integral parts:
+  <div class="h-100 w-100 d-flex flex-column align-items-center justify-content-around" id="Left" style="padding: 90px 30px; min-width: 900px; background-color: gainsboro;">
+    <h4>Welcome to my portfolio project showcasing my skills in backend development!</h4> Here, I present to you a simplified version of the beloved Pokémon Showdown. This project comprises three integral parts:
     <ol class="d-flex flex-column justify-content-around h-50">
       <li>
         <b>Monster Battling System:</b> Implemented in Java, this handles all the intricate logic behind engaging battles between digital creatures. From move selection to HP management, experience the essence of Pokémon battles in this meticulously crafted system.
+        <br/><a class="btn btn-secondary w-25 m-2" id="Front-Link" href="https://github.com/WritingHusky/MonsterBattleFrontend" >View Front-end Code</a>
       </li>
       <li>
         <b>Spring-Boot REST API:</b> Delve into the heart of the action with a robust API built on Spring Boot. This component orchestrates the interactions within battles, facilitating seamless communication between users and AI opponents.
+        <br/><a class="btn btn-secondary w-25 m-2" id="API-Link" href="https://github.com/WritingHusky/MainBattleBuilder">View API Code</a>
       </li>
       <li>
         <b>React Frontend:</b> Although aesthetics take a backseat, the React frontend (in TypeScript) provides a functional interface for users to engage with the battle system. Experience the thrill of strategic gameplay through a simple yet effective user interface.
+        <br/><a class="btn btn-secondary w-25 m-2" id="Sys-Link" href="https://github.com/WritingHusky/MonsterBattleHandling">View Battle System Code</a>
       </li>
     </ol>
+    <div>
+      <h4>Experience the thrill firsthand!</h4> Click the button below to engage with the React frontend and immerse yourself in the captivating world of monster battles. Test your skills, strategize your moves, and embark on an adventure unlike any other. Let the games begin!
+      <br/><button class="btn btn-primary m-2" id="demo-Link">Go To Demo</button>
+    </div>
     Whether you're a fellow developer, an avid Pokémon fan, or simply curious about backend development, explore this project to witness firsthand the culmination of my skills and passion. Let the battles begin!
   </div>
-  <!-- Right side content -->
-  <div class="h-100 w-50  d-flex flex-column align-items-center justify-content-around" id="Right" style="background-color: darkgrey; min-width: 450px; padding: 90px 30px">
-    Ready to dive into the code? Explore each component of this project on GitHub:
-    Click on the buttons below to navigate directly to the respective GitHub repositories. Let the exploration begin!
-    <div class="d-flex flex-column align-items-center justify-content-center">
-      Monster Battling System: Uncover the inner workings of the battling logic implemented in Java.
-      <a class="btn btn-secondary w-50 m-2" id="Front-Link" href="https://github.com/WritingHusky/MonsterBattleFrontend" >Front-end Code</a>
-      Spring-Boot REST API: Discover the backbone of the project, powering interactions between users and AI opponents.
-      <a class="btn btn-secondary w-50 m-2" id="API-Link" href="https://github.com/WritingHusky/MainBattleBuilder">API Code</a>
-      React Frontend: Although aesthetics take a backseat, explore the functional interface built with React and TypeScript.
-      <a class="btn btn-secondary w-50 m-2" id="Sys-Link" href="https://github.com/WritingHusky/MonsterBattleHandling">Battle System Code</a>
-    </div>
-    
-    
-    <div>
-      Experience the thrill firsthand! Click the button below to engage with the React frontend and immerse yourself in the captivating world of monster battles. Test your skills, strategize your moves, and embark on an adventure unlike any other. Let the games begin!
-      
-      <div class="btn btn-primary m-2">Deployment</div>
-    </div>
-  </div>
+  
+  <script>
+    document.getElementById("demo-Link").addEventListener("click", () => {
+      alert("This project is currently under development. Please check back later for the demo!");
+    });
+  </script>  
+  
 </div>
 </body>
 </html>
