@@ -5,116 +5,116 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Monster Battler Project</title>
 		<link
-			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 			rel="stylesheet"
 		/>
+		<style>
+			.bg-dark-custom {
+				background-color: #1c1c1c;
+			}
+			.bg-light-custom {
+				background-color: #f5f5f5;
+			}
+			.project-card:hover {
+				transform: scale(1.05);
+				transition: transform 0.2s;
+			}
+		</style>
 	</head>
-	<body>
+	<body style="padding: 0;">
 		<!-- Main content -->
-		<div class="bg-zinc-900 text-white py-20 px-4 md:px-10 lg:px-20">
-			<h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
-				Welcome to my Monster Batttler Project!
-			</h1>
-			<p class="text-lg md:text-xl lg:text-2xl mb-8">
-				A Pokémon Showdown inspired project that simulates monster battles for
-				users to interact with.
-			</p>
-			<button
-				id="viewProjectsBtn"
-				class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700"
-			>
-				View Project
-			</button>
+		<div class="bg-dark-custom text-white py-5 px-4">
+			<div class="container">
+				<h1 class="display-4 font-weight-bold mb-4">
+					Welcome to my Monster Battler Project!
+				</h1>
+				<p class="lead mb-5">
+					A Pokémon Showdown inspired project that simulates monster battles for
+					users to interact with.
+				</p>
+				<button
+					id="viewProjectsBtn"
+					class="btn btn-primary btn-lg"
+				>
+					View Project
+				</button>
+			</div>
 		</div>
 
-		<div class="bg-zinc-100 dark:bg-zinc-800 py-12">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<h2 class="text-3xl font-extrabold text-zinc-900 dark:text-zinc-200">
+		<div class="bg-light-custom py-5">
+			<div class="container">
+				<h2 class="display-5 font-weight-bold text-dark mb-5">
 					Check out the GitHub Repositories
 				</h2>
-				<div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
-					<a
-						href="#"
-						class="bg-white dark:bg-zinc-700 shadow rounded-lg overflow-hidden project-card"
-					>
-						<div class="p-4">
-							<h3
-								class="text-lg font-semibold text-zinc-900 dark:text-zinc-200"
-							>
-								Monster Battling System
-							</h3>
-							<p class="text-zinc-600 dark:text-zinc-400">
-								Implemented in Java, this part of the project handles the logic
-								for simulating a turn in a battle based on the current battle
-								state.
-							</p>
-						</div>
-					</a>
-					<a
-						href="#"
-						class="bg-white dark:bg-zinc-700 shadow rounded-lg overflow-hidden project-card"
-					>
-						<div class="p-4">
-							<h3
-								class="text-lg font-semibold text-zinc-900 dark:text-zinc-200"
-							>
-								Monster Battle API
-							</h3>
-							<p class="text-zinc-600 dark:text-zinc-400">
-								This Spring Boot API serves as the project's backend, managing
-								battle creation, turn execution, AI simulation, and more. It is
-								designed to be robust, efficient, and scalable for a seamless
-								user experience.
-							</p>
-						</div>
-					</a>
-					<a
-						href="#"
-						class="bg-white dark:bg-zinc-700 shadow rounded-lg overflow-hidden project-card"
-					>
-						<div class="p-4">
-							<h3
-								class="text-lg font-semibold text-zinc-900 dark:text-zinc-200"
-							>
-								React Frontend
-							</h3>
-							<p class="text-zinc-600 dark:text-zinc-400">
-								Although aesthetics are secondary, the React frontend (using
-								TypeScript) provides a functional interface for users to
-								interact with the battle system.
-							</p>
-						</div>
-					</a>
+				<div class="row">
+					<div class="col-md-4 mb-4">
+						<a
+							href="https://github.com/WritingHusky/MonsterBattleHandling"
+							class="card project-card h-100 text-dark"
+						>
+							<div class="card-body">
+								<h5 class="card-title">
+									Monster Battling System
+								</h5>
+								<p class="card-text">
+									Implemented in Java, this part of the project handles the logic
+									for simulating a turn in a battle based on the current battle
+									state.
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 mb-4">
+						<a
+							href="https://github.com/WritingHusky/MainBattleBuilder"
+							class="card project-card h-100 text-dark"
+						>
+							<div class="card-body">
+								<h5 class="card-title">
+									Monster Battle API
+								</h5>
+								<p class="card-text">
+									This Spring Boot API serves as the project's backend, managing
+									battle creation, turn execution, AI simulation, and more. It is
+									designed to be robust, efficient, and scalable for a seamless
+									user experience.
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 mb-4">
+						<a
+							href="https://github.com/WritingHusky/MonsterBattleFrontend"
+							class="card project-card h-100 text-dark"
+						>
+							<div class="card-body">
+								<h5 class="card-title">
+									React Frontend
+								</h5>
+								<p class="card-text">
+									Although aesthetics are secondary, the React frontend (using
+									TypeScript) provides a functional interface for users to
+									interact with the battle system.
+								</p>
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<footer class="bg-zinc-900 text-white py-8 px-4 md:px-8">
-			<div
-				class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between"
-			>
-				<p class="text-center md:text-left">&copy; 2024 Ethan Gelinas</p>
-				<nav class="mt-4 md:mt-0">
-					<a href="#" class="mr-4 hover:text-zinc-400">Home</a>
-					<a href="#" class="mr-4 hover:text-zinc-400">About</a>
-					<a href="#" class="hover:text-zinc-400">Contact</a>
+		<footer class="bg-dark-custom text-white py-4">
+			<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+				<p class="mb-2 mb-md-0">&copy; 2024 Ethan Gelinas</p>
+				<nav>
+					<a href="#" class="text-white mx-2">Home</a>
+					<a href="#" class="text-white mx-2">About</a>
+					<a href="#" class="text-white mx-2">Contact</a>
 				</nav>
 			</div>
 		</footer>
 
 		<script>
-			const projectCards = document.querySelectorAll(".project-card");
-
-			projectCards.forEach((card) => {
-				card.addEventListener("mouseenter", () => {
-					card.classList.add("transform", "scale-105");
-				});
-
-				card.addEventListener("mouseleave", () => {
-					card.classList.remove("transform", "scale-105");
-				});
-			});
-
 			const viewProjectsBtn = document.getElementById("viewProjectsBtn");
 			viewProjectsBtn.addEventListener("click", () => {
 				alert("The Demo is currently not available");
