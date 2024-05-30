@@ -5,109 +5,120 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Monster Battler Project</title>
 		<link
+			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
 			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		/>
 	</head>
-	<body style="margin: 0; padding: 0; min-width: 800px; font-size: 1rem; background-color: black;">
+	<body>
 		<!-- Main content -->
-		<div
-			class="w-100 d-flex flex-column align-items-center justify-content-between"
-			id="Left"
-			style="
-				padding: 50px 20px 0 30px;
-				background-color: gainsboro;
-				height: 95%;
-			"
-		>
-			<h4>Welcome to my Monster Batttler Project!</h4>
-			<p>
-				This project is based on the popular website Pokémon Showdown, which
-				simulate pokemon battles for users to interact with. This project is
-				broken down into three integral parts:
+		<div class="bg-zinc-900 text-white py-20 px-4 md:px-10 lg:px-20">
+			<h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
+				Welcome to my Monster Batttler Project!
+			</h1>
+			<p class="text-lg md:text-xl lg:text-2xl mb-8">
+				A Pokémon Showdown inspired project that simulates monster battles for
+				users to interact with.
 			</p>
-			<ol class="d-flex flex-column justify-content-around h-50 w-100">
-				<li>
-					<p>
-						<b>Monster Battling System:</b> Implemented in Java, this portion of
-						the project is where all the logic of the turn in a battle is
-						handled. The system is designed to simulate a turn in a battle given
-						the current state of the battle.
-					</p>
-					<a
-						class="btn btn-secondary w-25 m-2"
-						id="Front-Link"
-						href="https://github.com/WritingHusky/MonsterBattleFrontend"
-						>View Front-end Code</a
-					>
-				</li>
-				<li>
-					<p>
-						<b>Monster Battle API:</b> This spring-boot API serves as the
-						backend for the project, handling the creation of battles, the
-						execution of turns, simulating AI opponents, and more. The API is
-						designed to be robust, efficient, and scalable, ensuring a seamless
-						experience for users.
-					</p>
-					<a
-						class="btn btn-secondary w-25 m-2"
-						id="API-Link"
-						href="https://github.com/WritingHusky/MainBattleBuilder"
-						>View API Code</a
-					>
-				</li>
-				<li>
-					<p>
-						<b>React Frontend:</b> Although aesthetics take a backseat, the
-						React frontend (using TypeScript) provides a functional interface
-						for users to engage with the battle system.
-					</p>
-					<a
-						class="btn btn-secondary w-25 m-2"
-						id="Sys-Link"
-						href="https://github.com/WritingHusky/MonsterBattleHandling"
-						>View Battle System Code</a
-					>
-				</li>
-			</ol>
-			<div>
-				<h4>Experience the thrill firsthand!</h4>
-				<p>
-					Click the button below to engage with the React frontend and immerse
-					yourself in the captivating world of monster battles. Test your
-					skills, strategize your moves, and embark on an adventure unlike any
-					other. Let the games begin!
-				</p>
-				<button class="btn btn-primary m-2" id="demo-Link">Go To Demo</button>
-			</div>
-			<p>
-				Whether you're a fellow developer, an avid Pokémon fan, or simply
-				curious about backend development, explore this project to witness
-				firsthand the culmination of my skills and passion. Let the battles
-				begin!
-			</p>
+			<button
+				id="viewProjectsBtn"
+				class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700"
+			>
+				View Project
+			</button>
 		</div>
 
-		<!-- Footer -->
-		<div
-			class="w-100 d-flex flex-column justify-content-center align-items-center"
-			style="height: 15vh; background-color: rgb(71, 71, 71); color: white"
-		>
-			<p>Created by Ethan Gelians (WritingHusky)</p>
-			<p style="font-size: 0.65rem">
-				*This project is still in development so bugs may occur*
-			</p>
+		<div class="bg-zinc-100 dark:bg-zinc-800 py-12">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<h2 class="text-3xl font-extrabold text-zinc-900 dark:text-zinc-200">
+					Check out the GitHub Repositories
+				</h2>
+				<div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
+					<a
+						href="#"
+						class="bg-white dark:bg-zinc-700 shadow rounded-lg overflow-hidden project-card"
+					>
+						<div class="p-4">
+							<h3
+								class="text-lg font-semibold text-zinc-900 dark:text-zinc-200"
+							>
+								Monster Battling System
+							</h3>
+							<p class="text-zinc-600 dark:text-zinc-400">
+								Implemented in Java, this part of the project handles the logic
+								for simulating a turn in a battle based on the current battle
+								state.
+							</p>
+						</div>
+					</a>
+					<a
+						href="#"
+						class="bg-white dark:bg-zinc-700 shadow rounded-lg overflow-hidden project-card"
+					>
+						<div class="p-4">
+							<h3
+								class="text-lg font-semibold text-zinc-900 dark:text-zinc-200"
+							>
+								Monster Battle API
+							</h3>
+							<p class="text-zinc-600 dark:text-zinc-400">
+								This Spring Boot API serves as the project's backend, managing
+								battle creation, turn execution, AI simulation, and more. It is
+								designed to be robust, efficient, and scalable for a seamless
+								user experience.
+							</p>
+						</div>
+					</a>
+					<a
+						href="#"
+						class="bg-white dark:bg-zinc-700 shadow rounded-lg overflow-hidden project-card"
+					>
+						<div class="p-4">
+							<h3
+								class="text-lg font-semibold text-zinc-900 dark:text-zinc-200"
+							>
+								React Frontend
+							</h3>
+							<p class="text-zinc-600 dark:text-zinc-400">
+								Although aesthetics are secondary, the React frontend (using
+								TypeScript) provides a functional interface for users to
+								interact with the battle system.
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
+
+		<footer class="bg-zinc-900 text-white py-8 px-4 md:px-8">
+			<div
+				class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between"
+			>
+				<p class="text-center md:text-left">&copy; 2024 Ethan Gelinas</p>
+				<nav class="mt-4 md:mt-0">
+					<a href="#" class="mr-4 hover:text-zinc-400">Home</a>
+					<a href="#" class="mr-4 hover:text-zinc-400">About</a>
+					<a href="#" class="hover:text-zinc-400">Contact</a>
+				</nav>
+			</div>
+		</footer>
 
 		<script>
-			document.getElementById("demo-Link").addEventListener("click", () => {
-				alert(
-					"This project is currently under development. Please check back later for the demo!"
-				);
+			const projectCards = document.querySelectorAll(".project-card");
+
+			projectCards.forEach((card) => {
+				card.addEventListener("mouseenter", () => {
+					card.classList.add("transform", "scale-105");
+				});
+
+				card.addEventListener("mouseleave", () => {
+					card.classList.remove("transform", "scale-105");
+				});
+			});
+
+			const viewProjectsBtn = document.getElementById("viewProjectsBtn");
+			viewProjectsBtn.addEventListener("click", () => {
+				alert("The Demo is currently not available");
 			});
 		</script>
 	</body>
 </html>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
