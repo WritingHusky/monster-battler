@@ -21,7 +21,7 @@
 			}
 		</style>
 	</head>
-	<body style="padding: 0;">
+	<body style="padding: 0">
 		<!-- Main content -->
 		<div class="bg-dark-custom text-white py-5 px-4">
 			<div class="container">
@@ -32,12 +32,20 @@
 					A Pokémon Showdown inspired project that simulates monster battles for
 					users to interact with.
 				</p>
-				<button
-					id="viewProjectsBtn"
-					class="btn btn-primary btn-lg"
-				>
+				<button id="viewProjectsBtn" class="btn btn-primary btn-lg">
 					View Project
 				</button>
+			</div>
+		</div>
+		<div
+			id="modal"
+			class="fixed-top vw-100 vh-100 d-none align-items-center justify-content-center bg-opacity-custom"
+		>
+			<div class="bg-white p-4 rounded">
+				<p>
+					Project is not hosted yet. Currently learning secure hosting practices and implementing necessary safety features.
+				</p>
+				<button id="closeModalBtn" class="btn btn-primary mt-4">Close</button>
 			</div>
 		</div>
 
@@ -53,13 +61,11 @@
 							class="card project-card h-100 text-dark"
 						>
 							<div class="card-body">
-								<h5 class="card-title">
-									Monster Battling System
-								</h5>
+								<h5 class="card-title">Monster Battling System</h5>
 								<p class="card-text">
-									Implemented in Java, this part of the project handles the logic
-									for simulating a turn in a battle based on the current battle
-									state.
+									Implemented in Java, this part of the project handles the
+									logic for simulating a turn in a battle based on the current
+									battle state.
 								</p>
 							</div>
 						</a>
@@ -70,14 +76,12 @@
 							class="card project-card h-100 text-dark"
 						>
 							<div class="card-body">
-								<h5 class="card-title">
-									Monster Battle API
-								</h5>
+								<h5 class="card-title">Monster Battle API</h5>
 								<p class="card-text">
 									This Spring Boot API serves as the project's backend, managing
-									battle creation, turn execution, AI simulation, and more. It is
-									designed to be robust, efficient, and scalable for a seamless
-									user experience.
+									battle creation, turn execution, AI simulation, and more. It
+									is designed to be robust, efficient, and scalable for a
+									seamless user experience.
 								</p>
 							</div>
 						</a>
@@ -88,9 +92,7 @@
 							class="card project-card h-100 text-dark"
 						>
 							<div class="card-body">
-								<h5 class="card-title">
-									React Frontend
-								</h5>
+								<h5 class="card-title">React Frontend</h5>
 								<p class="card-text">
 									Although aesthetics are secondary, the React frontend (using
 									TypeScript) provides a functional interface for users to
@@ -104,7 +106,9 @@
 		</div>
 
 		<footer class="bg-dark-custom text-white py-4">
-			<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+			<div
+				class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+			>
 				<p class="mb-2 mb-md-0">&copy; 2024 Ethan Gelinas</p>
 				<nav>
 					<a href="#" class="text-white mx-2">Home</a>
@@ -116,8 +120,15 @@
 
 		<script>
 			const viewProjectsBtn = document.getElementById("viewProjectsBtn");
+			const modal = document.getElementById("modal");
+			const closeModalBtn = document.getElementById("closeModalBtn");
+
 			viewProjectsBtn.addEventListener("click", () => {
-				alert("The Demo is currently not available");
+				modal.classList.remove("d-none");
+			});
+
+			closeModalBtn.addEventListener("click", () => {
+				modal.classList.add("d-none");
 			});
 		</script>
 	</body>
